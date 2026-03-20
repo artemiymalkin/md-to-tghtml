@@ -5,3 +5,9 @@ services:
       - "6000:3000"
     environment:
       PORT: "3000"
+    networks:
+      - n8n_default
+
+networks:
+  n8n_default:
+    external: true
