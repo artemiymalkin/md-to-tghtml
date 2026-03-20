@@ -1,0 +1,7 @@
+services:
+  telegram-format:
+    build: .
+    ports:
+      - "6000:3000"
+    environment:
+      PORT: "3000"
